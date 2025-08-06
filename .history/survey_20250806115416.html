@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="title">User Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve!</p>
+
+    <form id="survey-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="10" max="100" placeholder="18" required>
+
+      <label for="job">Occupation:</label>
+      <select id="job" name="job" required>
+        <option disabled selected value>-- Select your occupation --</option>
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+        <option value="designer">Designer</option>
+        <option value="other">Other</option>
+      </select>
+
+      <p>How long have you been learning programming?</p>
+      <label><input type="radio" name="experience" value="0-6" required> Less than 6 months</label>
+      <label><input type="radio" name="experience" value="6-12"> 6–12 months</label>
+      <label><input type="radio" name="experience" value="1y+"> Over 1 year</label>
+
+      <p>Which languages do you like?</p>
+      <label><input type="checkbox" name="language" value="html"> HTML</label>
+      <label><input type="checkbox" name="language" value="css"> CSS</label>
+      <label><input type="checkbox" name="language" value="js"> JavaScript</label>
+
+      <label for="comment">Additional comments:</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Your feedback..."></textarea>
+
+      <button type="submit" id="submit">Submit Survey</button>
+    </form>
+  </div>
+
+</body>
+</html>
